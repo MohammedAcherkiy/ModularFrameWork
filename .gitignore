@@ -1,5 +1,6 @@
-casspath
+.casspath
 .project
 .settings/
 target/
 test-output/
+ScreenShot
