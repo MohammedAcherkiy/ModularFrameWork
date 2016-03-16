@@ -31,5 +31,18 @@ public class WindowHelper extends StartWebDriver {
 		driver.switchTo().window(win.get(0));
 		
 	}
+	
+	
+	public static void back(){
+		driver.navigate().back();
+	}
+	
+	public static void forward(){
+		driver.navigate().forward();
+	}
+	
+	public static void refresh(){
+		driver.navigate().refresh();
+	}
 
 }
