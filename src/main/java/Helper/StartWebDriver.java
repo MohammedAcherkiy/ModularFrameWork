@@ -72,7 +72,7 @@ public class StartWebDriver {
 		}else if(driver.findElements(By.cssSelector(locator)).size()==1){
 			return driver.findElement(By.cssSelector(locator));
 		}else{
-			throw new NoSuchElementException ("Link text not found " +  locator);
+			throw new NoSuchElementException ("No sh element  " +  locator);
 		}
 		
 		}

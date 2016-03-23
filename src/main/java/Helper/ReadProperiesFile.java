@@ -6,7 +6,7 @@ import java.util.Properties;
 public class ReadProperiesFile {
 	
 	protected  InputStream input  = null;
-	 protected Properties prop = null;
+	protected Properties prop = null;
 	
 	
 	public  ReadProperiesFile(){

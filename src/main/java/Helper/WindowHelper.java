@@ -5,9 +5,8 @@ import java.util.List;
 
 public class WindowHelper extends StartWebDriver {
 	
-	
 	public static void switchWindow(int index){
-		
+				
 		try{
 		List<String>win = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(win.get(index));
@@ -16,10 +15,8 @@ public class WindowHelper extends StartWebDriver {
 	 	throw new IndexOutOfBoundsException ("Invalid index " + index);
 	 	
 		}
-		
-		
-	}
 	
+	}
 	
 	public static void switchToParentWindow(){
 		
@@ -28,11 +25,9 @@ public class WindowHelper extends StartWebDriver {
 			driver.switchTo().window(win.get(i));
 			driver.close();
 		}
-		driver.switchTo().window(win.get(0));
-		
+		driver.switchTo().window(win.get(0));	
 	}
-	
-	
+
 	public static void back(){
 		driver.navigate().back();
 	}
@@ -43,6 +38,10 @@ public class WindowHelper extends StartWebDriver {
 	
 	public static void refresh(){
 		driver.navigate().refresh();
+	}
+	
+	public static void windowMaximize(){
+		driver.manage().window().maximize();
 	}
 
 }

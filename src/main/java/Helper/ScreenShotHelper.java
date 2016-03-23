@@ -12,7 +12,6 @@ public class ScreenShotHelper extends StartWebDriver {
 	
 	public static void takeScreenShot(String fileName){
 		
-		
 		try{
 			
 			File src =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

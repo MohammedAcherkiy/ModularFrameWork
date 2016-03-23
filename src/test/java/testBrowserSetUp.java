@@ -26,7 +26,7 @@ public class testBrowserSetUp extends StartWebDriver {
 		
 		//System.out.println(driver.getCurrentUrl());
 		//System.out.println(driver.getTitle());
-	
+		
 		WebElement ele =  driver.findElement(By.id("jawbone-login-trigger"));
 		ele.click();
      	TextBoxHelper.TypeInTextBox("jawbone-login-email","ach251@gmail.com" );
